@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Sign In Form</h2>
+            <form name="signInForm" ng-submit="signInForm.$valid && handleSignInForm(user)" autocomplete="off">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" ng-model="user.userName" name="userName" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" ng-model="user.password" name="password" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn btn-md btn-success" ng-disabled="signInForm.$pristine || signInForm.$invalid">Submit</button>
+                <a ui-sref="signUp" href>Sign Up</a>
+            </form>
+        </div>
+    </div>
+</div>

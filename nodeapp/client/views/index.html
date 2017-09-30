@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html lang="">
+
+<head>
+    <base href="/">
+    <title>NUAGE DM</title>
+    <!-- css -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bower_components/angular-growl-v2/build/angular-growl.min.css">
+    <!-- htmlbuild:css -->
+    <!-- endbuild -->
+    <!-- config file -->
+    <script src="/config/1.0.0"></script>
+    <!-- socket file -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- bower components -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/validate/validate.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-growl-v2/build/angular-growl.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <!-- htmlbuild:js -->
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="body" ui-view></div>
+    <div growl></div>
+    <script language="JavaScript">
+    /*if (window.location.hash === '#_=_') window.location.hash = '#!'*/
+    angular.bootstrap(document, ['myApp']);
+    </script>
+</body>
+
+</html>

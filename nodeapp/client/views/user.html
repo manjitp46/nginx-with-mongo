@@ -1,0 +1,47 @@
+<div ng-include="'dist/views/header'"></div>
+<div class="container">
+    <div class="row">
+    	<div class="col-md-4">
+    	</div>
+        <div class="col-md-4 gray-bg table">
+            <table>
+                <tbody class="tbody">
+                    <tr>
+                        <td>Name</td>
+                        <td>{{userProfile.firstName}} {{userProfile.lastName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td>{{userProfile.userName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>{{userProfile.email}}</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td>{{userProfile.mobileNumber}}</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>{{userProfile.gender | titleCase}}</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>{{userProfile.dateOfBirth | dob}}</td>
+                    </tr>
+                    <tr>
+                        <td>Role</td>
+                        <td>{{userProfile.role | removeUnderSocre}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="action-btn pull-right">
+            	<button type="button" ng-click="handleUserModal(userProfile, 'edit')" class="btn btn-success btn-md">Edit</button>
+            	<button type="button" ng-click="handleUserModal(userProfile, 'delete')" class="btn btn-danger btn-md" ng-if="checkRole('delete')" >Delete</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+    	</div>
+    </div>
+</div>

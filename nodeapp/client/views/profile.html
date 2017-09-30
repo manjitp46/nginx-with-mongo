@@ -1,0 +1,55 @@
+<div ng-include="'dist/views/header'"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-6 gray-bg table" ng-repeat="user in userList">
+                    <table>
+                        <tbody class="tbody">
+                            <tr>
+                                <td>Name</td>
+                                <td>{{user.firstName}} {{user.lastName}}</td>
+                            </tr>
+                            <tr>
+                                <td>Username</td>
+                                <td>{{user.userName}}</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>{{user.email}}</td>
+                            </tr>
+                            <tr>
+                                <td>Mobile</td>
+                                <td>{{user.mobileNumber}}</td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>{{user.gender | titleCase}}</td>
+                            </tr>
+                            <tr>
+                                <td>Date of Birth</td>
+                                <td>{{user.dateOfBirth | dob}}</td>
+                            </tr>
+                            <tr>
+                                <td>Role</td>
+                                <td>{{user.role | removeUnderSocre}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="action-btn pull-right">
+                        <button type="button" ng-click="handleUserModal(user, 'edit')" class="btn btn-success btn-md">Edit</button>
+                        <button type="button" ng-click="handleUserModal(user, 'delete')" class="btn btn-danger btn-md">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>Active User</h2>
+            <ul class="active-user">
+                <li ng-repeat="activeUser in onlineUser">
+                    <p>{{$index+1}}. {{activeUser.firstName}} {{activeUser.lastName}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
