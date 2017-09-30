@@ -45,7 +45,7 @@ module.exports = {
     },
     dbConfig: {
         dev: {
-            host: "mongodb://localhost:27017/nuageDM",
+            host: "http://localhost:27017/nuageDM",
             dbOptions: {
                 native_parser: true
             },
