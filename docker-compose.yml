@@ -9,7 +9,7 @@ services:
     # tty: true
 
   nodeapp-service-build:
-    build: ./nodejs
+    build: ./nodeapp
     ports:
      - "8000:9999"
 
