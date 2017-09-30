@@ -3,12 +3,12 @@ MAINTAINER Manjit Kumar <manjitpandeybth@gmail.com>
 
 RUN apk update
 
-RUN apk add bash curl wget ansible jq git
+RUN apk add bash curl wget  ansible jq curl git
 
 WORKDIR /home/nodeapp/
 
-COPY / /home/nodeapp/
+COPY package.json /home/nodeapp/
 
 RUN npm install
 
-ENTRYPOINT ["node","server/server.js"]
+COPY / /home/nodeapp/
