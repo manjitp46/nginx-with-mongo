@@ -3,7 +3,7 @@ MAINTAINER Manjit Kumar <manjitpandeybth@gmail.com>
 
 RUN apk update
 
-RUN apk add bash curl wget  ansible jq curl
+RUN apk add bash curl wget ansible jq 
 
 WORKDIR /home/nodeapp/
 
