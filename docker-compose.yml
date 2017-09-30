@@ -7,6 +7,12 @@ services:
      - "27017:27017"
     stdin_open: true
     # tty: true
+
+  nodeapp-service-build:
+    build: ./nodejs
+    ports:
+     - "8000:9999"
+
   nginx-service-build:
     image: nginx:alpine
     ports:
