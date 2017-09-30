@@ -242,5 +242,13 @@ User.prototype.getUserList = function(userRow, cb) {
     })
 }
 
+User.prototype.getCheckin = function(cb){
+    db.collection("checkins").find().toArray(utils.handleDBCallback(null, cb));
+}
+
+User.prototype.postCheckin = function(checkin, cb){
+    db.collection("checkins").insertOne(checkin, utils.handleDBCallback(null, cb));
+}
+
 module.exports = new User;
 broadcaster.on('db::connectedToDB', setUpIndexing);

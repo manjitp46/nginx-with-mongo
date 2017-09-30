@@ -141,6 +141,34 @@ module.exports = {
         data: {},
         params: { versionNo: '1.0.0', userName: '@userName' },
         constraints: constraints['home']
+    }, {
+        routeName: 'getCheckin',
+        routeUrl: '/getCheckin',
+        routeMethod: 'get',
+        routeController: 'user',
+        routeHandler: 'getCheckin',
+        accessTo: '*',
+        isSecured: false,
+        tokenRequired: false,
+        isArray: false,
+        cache: false,
+        data: {},
+        params: {},
+        constraints: constraints['home']
+    }, {
+        routeName: 'postCheckin',
+        routeUrl: '/postCheckin',
+        routeMethod: 'post',
+        routeController: 'user',
+        routeHandler: 'postCheckin',
+        accessTo: '*',
+        isSecured: false,
+        tokenRequired: false,
+        isArray: false,
+        cache: false,
+        data: {},
+        params: {},
+        constraints: constraints['home']
     }],
     getResources: function() {
         var resourceDict = {}

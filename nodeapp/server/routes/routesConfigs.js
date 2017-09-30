@@ -134,10 +134,10 @@ module.exports = {
             route.routeHandler ? routeHandler = route.routeHandler : routeHandler = route.routeMethod
             switch (route.routeMethod) {
                 case 'get':
-                    app.get(route.routeUrl, authenticateRoute(route.isSecured), verifyJwtToken(route.tokenRequired), checkPermissions(route.accessTo), checkConstraints(route), handler[routeHandler])
+                    app.get(route.routeUrl, handler[routeHandler])
                     break;
                 case 'post':
-                    app.post(route.routeUrl, authenticateRoute(route.isSecured), verifyJwtToken(route.tokenRequired), checkPermissions(route.accessTo), checkConstraints(route), handler[routeHandler])
+                    app.post(route.routeUrl, handler[routeHandler])
                     break;
                 case 'put':
                     app.put(route.routeUrl, authenticateRoute(route.isSecured), verifyJwtToken(route.tokenRequired), checkPermissions(route.accessTo), handler[routeHandler])

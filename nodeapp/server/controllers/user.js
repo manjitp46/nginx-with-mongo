@@ -186,7 +186,7 @@ module.exports = {
                 utils.sendResponseForAPI(err, req, res, null);
             } else {
                 if (result) {
-                    // update session data when password changed by user 
+                    // update session data when password changed by user
                     broadcaster.emit('session::updateSession', req, true, null, null, result);
                     utils.sendResponseForAPI(null, req, res, {
                         userRow: utils.formatUserRow(result)
@@ -249,6 +249,28 @@ module.exports = {
                 });
             }
         });
-    }
+    },
+    getCheckin: function(req, res) {
+        userModel.getCheckin(function(err, result) {
+            if (err) {
+                utils.sendResponseForAPI(err, req, res, null);
+            } else {
+                utils.sendResponseForAPI(null, req, res, {
+                    data: result
+                });
+            }
+        });
+    },
+    postCheckin: function(req, res) {
+        userModel.postCheckin(req.body.data, function(err, result) {
+            if (err) {
+                utils.sendResponseForAPI(err, req, res, null);
+            } else {
+                utils.sendResponseForAPI(null, req, res, {
+                    data: result
+                });
+            }
+        });
+    },
 }
 broadcaster.on('session::updateSession', updateSession);
