@@ -11,14 +11,34 @@ function Checkin(obj) {
   this._id = (obj && obj._id) || undefined;
 }
 
-Checkin.prototype.getCheckin = function(cb) {
+Checkin.prototype.getCheckin = function(query, cb) {
+  console.log("getCheckin model");
+  var selector = {};
+  if (query.id) {
+    selector = { _id: new ObjectID(query.id) };
+  } else if (query.name) {
+    selector = { "assosiation.name": query.name };
+  } else if (query.date) {
+    var nextDate = new Date(query.date);
+    nextDate.setDate(nextDate.getDate() + 1);
+    selector = {
+      time: {
+        $gte: new Date(query.date).toISOString(),
+        $lte: new Date(nextDate).toISOString()
+      }
+    };
+  }
+
+  console.log("selector: ", JSON.stringify(selector) + "\n");
   db
     .collection(COLLECTION)
-    .find()
+    .find(selector)
     .toArray(utils.handleDBCallback(null, cb));
 };
 
 Checkin.prototype.postCheckin = function(checkin, cb) {
+  checkin["addedOn"] = new Date().toISOString();
+  console.log(checkin);
   db
     .collection(COLLECTION)
     .insertOne(checkin, utils.handleDBCallback(null, cb));

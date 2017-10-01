@@ -10,12 +10,20 @@ var _ = require("lodash");
 
 module.exports = {
   getCheckin: function(req, res) {
-    checkinModel.getCheckin(function(err, result) {
+    var selector = {};
+    if (!_.isEmpty(req.query)) {
+      selector = req.query;
+    }
+    if (!_.isEmpty(req.params)) {
+      selector = req.params;
+    }
+    checkinModel.getCheckin(selector, function(err, result) {
       if (err) {
         utils.sendResponseForAPI(err, req, res, null);
       } else {
         utils.sendResponseForAPI(null, req, res, {
-          data: result
+          count: result.length,
+          documents: result
         });
       }
     });
@@ -26,7 +34,7 @@ module.exports = {
         utils.sendResponseForAPI(err, req, res, null);
       } else {
         utils.sendResponseForAPI(null, req, res, {
-          data: result
+          documents: result
         });
       }
     });

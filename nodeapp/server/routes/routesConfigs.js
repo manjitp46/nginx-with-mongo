@@ -5,103 +5,17 @@ var utils = require("../utils/utils");
 var validate = require("validate.js");
 var jwt = require("../models").jwt;
 var serverConfigs = require("../configs/serverConfigs");
-// var userModel = require('../models/user');
 
 module.exports = {
   configureRoutes: function(app) {
     var authenticateRoute = function(isSecured) {
       next();
-      //   return function(req, res, next) {
-      //     if (isSecured === false) {
-      //       next();
-      //     } else if (
-      //       isSecured === true &&
-      //       req.session.globals.loggedIn === true
-      //     ) {
-      //       next();
-      //     } else {
-      //       var error = {
-      //         nuageDMStatusCode: 401,
-      //         nuageDMStatusMessage: "Not authorized"
-      //       };
-      //       utils.sendResponseForAPI(error, req, res, null);
-      //     }
-      //   };
     };
     var verifyJwtToken = function(tokenRequired) {
       next();
-      //   return function(req, res, next) {
-      //     if (tokenRequired) {
-      //       var jwtToken = utils.jwtToken(req.headers.authorization);
-      //       jwt.verify(jwtToken, serverConfigs.jwtSecret, function(
-      //         tokenErr,
-      //         tokenDecoded
-      //       ) {
-      //         if (tokenErr) {
-      //           var error = {
-      //             ndmStatusCode: 401,
-      //             ndmStatusMessage: JSON.stringify(tokenErr)
-      //           };
-      //           utils.sendResponseForAPI(error, req, res, null);
-      //         } else {
-      //           // console.log(new Date(tokenDecoded.exp))
-      //           userModel.getUserById(tokenDecoded.accountId, function(
-      //             err,
-      //             result
-      //           ) {
-      //             if (err) {
-      //               var error = {
-      //                 ndmStatusCode: 401,
-      //                 ndmStatusMessage: "invalid token"
-      //               };
-      //               utils.sendResponseForAPI(error, req, res, null);
-      //             } else {
-      //               if (result && result._id) {
-      //                 next();
-      //               } else {
-      //                 var error = {
-      //                   ndmStatusCode: 401,
-      //                   ndmStatusMessage: "invalid token"
-      //                 };
-      //                 utils.sendResponseForAPI(error, req, res, null);
-      //               }
-      //             }
-      //           });
-      //         }
-      //       });
-      //     } else {
-      //       next();
-      //     }
-      //   };
     };
     var checkPermissions = function(accessTo) {
       next();
-      //   return function(req, res, next) {
-      //     var allowed = false;
-      //     if (accessTo == "*") {
-      //       next();
-      //     } else {
-      //       _.each(accessTo, function(customerType) {
-      //         if (
-      //           _.indexOf(
-      //             req.session.globals.customer.customerType,
-      //             customerType
-      //           ) != -1
-      //         ) {
-      //           allowed = true;
-      //         }
-      //       });
-      //       if (allowed) {
-      //         next();
-      //       } else {
-      //         var error = {
-      //           nuageDMStatusCode: 401,
-      //           nuageDMStatusMessage: "Not authorized"
-      //         };
-      //         utils.sendResponseForAPI(error, req, res, null);
-      //       }
-      //     }
-      //   };
     };
     // use routeName as the object key for data posted in the body for POST and PUT
     var checkConstraints = function(route) {

@@ -19,7 +19,22 @@ module.exports = {
     },
     {
       routeName: "getCheckin",
-      routeUrl: "/getCheckin",
+      routeUrl: "/checkin",
+      routeMethod: "get",
+      routeController: "checkin",
+      routeHandler: "getCheckin",
+      accessTo: "*",
+      isSecured: false,
+      tokenRequired: false,
+      isArray: false,
+      cache: false,
+      data: {},
+      params: {},
+      constraints: constraints["home"]
+    },
+    {
+      routeName: "getCheckin",
+      routeUrl: "/checkin/:id",
       routeMethod: "get",
       routeController: "checkin",
       routeHandler: "getCheckin",
@@ -34,7 +49,7 @@ module.exports = {
     },
     {
       routeName: "postCheckin",
-      routeUrl: "/postCheckin",
+      routeUrl: "/checkin",
       routeMethod: "post",
       routeController: "checkin",
       routeHandler: "postCheckin",

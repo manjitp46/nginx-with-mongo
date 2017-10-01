@@ -48,8 +48,8 @@
           label: (i + 1).toString()
         });
         google.maps.event.addListener(marker, "click", function () {
-          infoWindow.setContent("<b>Marker: " + marker.label +
-            "<br/>Time: " + new Date(markerData.time) + "</b><br/>" + JSON.stringify(markerData));
+          infoWindow.setContent("<b>Name: " + markerData.name +
+            "</b><br/>Time: " + new Date(markerData.time));
           infoWindow.open(map, marker);
         });
         oms.addMarker(marker);
@@ -60,7 +60,7 @@
       }
     }
 
-    fetch('/getCheckin').then(function (response) {
+    fetch('/checkin').then(function (response) {
       var contentType = response.headers.get("content-type");
       if (contentType && contentType.includes("application/json")) {
         return response.json();
@@ -69,16 +69,17 @@
     })
       .then(function (json) {
         console.log(json);
-        var documents = json.data.filter(function (checkin) {
-          if (checkin.checkinData.location.coordinate &&
-            checkin.checkinData.location.coordinate.lat) {
+        var documents = json.documents.filter(function (checkin) {
+          if (checkin.location.coordinate &&
+            checkin.location.coordinate.lat) {
             return true;
           }
         }).map(function (checkin) {
           return {
-            type: checkin.checkinData.location.type,
-            coordinate: checkin.checkinData.location.coordinate,
-            time: parseInt(checkin.checkinData.submittedOn)
+            type: checkin.location.type,
+            coordinate: checkin.location.coordinate,
+            time: checkin.time,
+            name: checkin.assosiation.name
           }
         });
         console.log(documents);
