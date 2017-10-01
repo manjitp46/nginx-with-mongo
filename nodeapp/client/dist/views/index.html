@@ -1,4 +1,91 @@
-<!doctype html> <html lang> <head> <base href="/"> <title>NUAGE DM</title>  <link href=//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css rel=stylesheet> <link rel=stylesheet href=dist/font-awesome-4.7.0/css/font-awesome.css> <link rel=stylesheet href=bower_components/bootstrap/dist/css/bootstrap.min.css> <link rel=stylesheet href=bower_components/bootstrap/dist/css/bootstrap-theme.min.css> <link rel=stylesheet href=bower_components/angular-growl-v2/build/angular-growl.min.css> <link rel=stylesheet href=dist/css/style-1485777438973.css>  <script src=/config/1.0.0></script>  <script src=/socket.io/socket.io.js></script>  <script src=bower_components/jquery/dist/jquery.min.js></script> <script src=bower_components/lodash/lodash.js></script> <script src=bower_components/validate/validate.min.js></script> <script src=bower_components/bootstrap/dist/js/bootstrap.min.js></script> <script src=bower_components/angular/angular.js></script> <script src=bower_components/angular-animate/angular-animate.min.js></script> <script src=bower_components/angular-growl-v2/build/angular-growl.min.js></script> <script src=bower_components/angular-resource/angular-resource.min.js></script> <script src=bower_components/angular-ui-router/release/angular-ui-router.min.js></script> <script src=bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js></script> <script src=dist/scripts/app-1485777438973.js></script> </head> <body> <div class=body ui-view></div> <div growl></div> <script language=JavaScript>
-    /*if (window.location.hash === '#_=_') window.location.hash = '#!'*/
-    angular.bootstrap(document, ['myApp']);
-    </script> </body> </html> 
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Google Map</title>
+  <style>
+    #map {
+      height: 100%;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5o8ZVhKL3LGzQabrtcnU0zb2SOx9WR3o">
+  </script>
+  <script src="https://jawj.github.io/OverlappingMarkerSpiderfier/bin/oms.min.js"></script>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script>
+    function initMap(markers) {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        mapTypeId: google.maps.MapTypeId.roadmap
+      });
+      var bounds = new google.maps.LatLngBounds();
+      var infoWindow = new google.maps.InfoWindow();
+      var oms = new OverlappingMarkerSpiderfier(map, {
+        markersWontMove: true,
+        markersWontHide: true,
+        keepSpiderfied: true
+      });
+      function createMarker(markerData, i) {
+        var position = new google.maps.LatLng({
+          lat: parseFloat(markerData.coordinate.lat),
+          lng: parseFloat(markerData.coordinate.lng)
+        });
+        bounds.extend(position);
+        var marker = new google.maps.Marker({
+          position: position,
+          map: map,
+          label: (i + 1).toString()
+        });
+        google.maps.event.addListener(marker, "click", function () {
+          infoWindow.setContent("<b>Marker: " + marker.label +
+            "<br/>Time: " + new Date(markerData.time) + "</b><br/>" + JSON.stringify(markerData));
+          infoWindow.open(map, marker);
+        });
+        oms.addMarker(marker);
+        map.fitBounds(bounds);
+      }
+      for (var i = 0; i < markers.length; i++) {
+        createMarker(markers[i], i);
+      }
+    }
+
+    fetch('/getCheckin').then(function (response) {
+      var contentType = response.headers.get("content-type");
+      if (contentType && contentType.includes("application/json")) {
+        return response.json();
+      }
+      throw new TypeError("Oops, we haven't got JSON!");
+    })
+      .then(function (json) {
+        console.log(json);
+        var documents = json.data.filter(function (checkin) {
+          if (checkin.checkinData.location.coordinate &&
+            checkin.checkinData.location.coordinate.lat) {
+            return true;
+          }
+        }).map(function (checkin) {
+          return {
+            type: checkin.checkinData.location.type,
+            coordinate: checkin.checkinData.location.coordinate,
+            time: parseInt(checkin.checkinData.submittedOn)
+          }
+        });
+        console.log(documents);
+        initMap(documents);
+      })
+      .catch(function (error) { console.log(error); });
+  </script>
+</body>
+
+</html>
