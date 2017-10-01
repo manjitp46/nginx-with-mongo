@@ -1,9 +1,10 @@
 "use strict";
 var ObjectID = require("mongodb").ObjectID;
-var db = require("./index");
-var utils = require("../utils/utils");
+var moment = require("moment-timezone");
 var broadcaster = require("broadcaster");
 var md5 = require("md5");
+var db = require("./index");
+var utils = require("../utils/utils");
 var COLLECTION = "history";
 global.env = process.env.NODE_ENV || "dev";
 
@@ -24,12 +25,16 @@ User.prototype.getHistory = function(query, cb) {
     selector.push({ type: query.type });
   }
   if (query.date) {
-    var nextDate = new Date(query.date);
-    nextDate.setDate(nextDate.getDate() + 1);
+    var startOfDay = moment(query.date)
+      .startOf("day")
+      .toISOString();
+    var endOfDay = moment(query.date)
+      .endOf("day")
+      .toISOString();
     selector.push({
       time: {
-        $gte: new Date(query.date).toISOString(),
-        $lte: new Date(nextDate).toISOString()
+        $gte: startOfDay,
+        $lte: endOfDay
       }
     });
   }
@@ -46,7 +51,7 @@ User.prototype.getHistory = function(query, cb) {
 };
 
 User.prototype.postHistory = function(history, cb) {
-  history["addedOn"] = new Date().toISOString();
+  history["addedOn"] = moment().toISOString();
   db
     .collection(COLLECTION)
     .insertOne(history, utils.handleDBCallback(null, cb));
