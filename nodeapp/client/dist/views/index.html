@@ -7,7 +7,11 @@
   <title>Google Map</title>
   <style>
     #map {
-      height: 100%;
+      height: 95%;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
     }
 
     html,
@@ -48,8 +52,8 @@
           label: (i + 1).toString()
         });
         google.maps.event.addListener(marker, "click", function () {
-          infoWindow.setContent("<b>Name: " + markerData.name +
-            "</b><br/>Time: " + new Date(markerData.time));
+          infoWindow.setContent("<b>" + markerData.name +
+            "</b><br/>Type: " + markerData.type + "<br/>Battery Level: " + markerData.batteryLevel + "%<br/>Time: " + new Date(markerData.time));
           infoWindow.open(map, marker);
         });
         oms.addMarker(marker);
@@ -79,7 +83,8 @@
             type: checkin.location.type,
             coordinate: checkin.location.coordinate,
             time: checkin.time,
-            name: checkin.assosiation.name
+            name: checkin.assosiation.name,
+            batteryLevel: checkin.assosiation.battery
           }
         });
         console.log(documents);
