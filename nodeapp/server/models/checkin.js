@@ -13,26 +13,32 @@ function Checkin(obj) {
 
 Checkin.prototype.getCheckin = function(query, cb) {
   console.log("getCheckin model");
-  var selector = {};
+  var selector = [];
   if (query.id) {
-    selector = { _id: new ObjectID(query.id) };
-  } else if (query.name) {
-    selector = { "assosiation.name": query.name };
-  } else if (query.date) {
+    selector.push({ _id: new ObjectID(query.id) });
+  }
+  if (query.name) {
+    selector.push({ "assosiation.name": query.name });
+  }
+  if (query.type) {
+    selector.push({ "location.type": query.type });
+  }
+  if (query.date) {
     var nextDate = new Date(query.date);
     nextDate.setDate(nextDate.getDate() + 1);
-    selector = {
+    selector.push({
       time: {
         $gte: new Date(query.date).toISOString(),
         $lte: new Date(nextDate).toISOString()
       }
-    };
+    });
   }
 
-  console.log("selector: ", JSON.stringify(selector) + "\n");
+  var finalSelector = { $and: selector };
+  console.log("mongo query: ", JSON.stringify(finalSelector) + "\n");
   db
     .collection(COLLECTION)
-    .find(selector)
+    .find(finalSelector)
     .toArray(utils.handleDBCallback(null, cb));
 };
 
