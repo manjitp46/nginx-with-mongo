@@ -64,7 +64,12 @@
       }
     }
 
-    fetch('/checkin').then(function (response) {
+    var url = "/checkin";
+    if (location.search && location.search.length > 0 && location.search.indexOf("?") > -1 && location.search.indexOf("=") > -1) {
+      url = url + location.search;
+    }
+
+    fetch(url).then(function (response) {
       var contentType = response.headers.get("content-type");
       if (contentType && contentType.includes("application/json")) {
         return response.json();
