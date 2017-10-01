@@ -26,9 +26,11 @@ Checkin.prototype.getCheckin = function(query, cb) {
   }
   if (query.date) {
     var startOfDay = moment(query.date)
+      .tz("Asia/Kolkata")
       .startOf("day")
       .toISOString();
     var endOfDay = moment(query.date)
+      .tz("Asia/Kolkata")
       .endOf("day")
       .toISOString();
     selector.push({
