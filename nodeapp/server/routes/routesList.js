@@ -76,6 +76,51 @@ module.exports = {
       data: {},
       params: {},
       constraints: constraints["home"]
+    },
+    {
+      routeName: "getHistory",
+      routeUrl: "/history",
+      routeMethod: "get",
+      routeController: "user",
+      routeHandler: "getHistory",
+      accessTo: "*",
+      isSecured: false,
+      tokenRequired: false,
+      isArray: false,
+      cache: false,
+      data: {},
+      params: {},
+      constraints: constraints["home"]
+    },
+    {
+      routeName: "getHistory",
+      routeUrl: "/history/:id",
+      routeMethod: "get",
+      routeController: "user",
+      routeHandler: "getHistory",
+      accessTo: "*",
+      isSecured: false,
+      tokenRequired: false,
+      isArray: false,
+      cache: false,
+      data: {},
+      params: {},
+      constraints: constraints["home"]
+    },
+    {
+      routeName: "postHistory",
+      routeUrl: "/history",
+      routeMethod: "post",
+      routeController: "user",
+      routeHandler: "postHistory",
+      accessTo: "*",
+      isSecured: false,
+      tokenRequired: false,
+      isArray: false,
+      cache: false,
+      data: {},
+      params: {},
+      constraints: constraints["home"]
     }
   ],
   getResources: function() {

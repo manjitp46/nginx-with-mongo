@@ -4,24 +4,24 @@ var db = require("./index");
 var utils = require("../utils/utils");
 var broadcaster = require("broadcaster");
 var md5 = require("md5");
-var COLLECTION = "checkins";
+var COLLECTION = "history";
 global.env = process.env.NODE_ENV || "dev";
 
-function Checkin(obj) {
+function User(obj) {
   this._id = (obj && obj._id) || undefined;
 }
 
-Checkin.prototype.getCheckin = function(query, cb) {
-  console.log("getCheckin model");
+User.prototype.getHistory = function(query, cb) {
+  console.log("getHistory model");
   var selector = [];
   if (query.id) {
     selector.push({ _id: new ObjectID(query.id) });
   }
   if (query.name) {
-    selector.push({ "assosiation.name": query.name });
+    selector.push({ name: query.name });
   }
   if (query.type) {
-    selector.push({ "location.type": query.type });
+    selector.push({ type: query.type });
   }
   if (query.date) {
     var nextDate = new Date(query.date);
@@ -45,15 +45,11 @@ Checkin.prototype.getCheckin = function(query, cb) {
     .toArray(utils.handleDBCallback(null, cb));
 };
 
-Checkin.prototype.postCheckin = function(checkin, cb) {
-  checkin["addedOn"] = new Date().toISOString();
+User.prototype.postHistory = function(history, cb) {
+  history["addedOn"] = new Date().toISOString();
   db
     .collection(COLLECTION)
-    .insertOne(checkin, utils.handleDBCallback(null, cb));
+    .insertOne(history, utils.handleDBCallback(null, cb));
 };
 
-Checkin.prototype.sauravManjit = function(cb) {
-  db.collection(COLLECTION).remove(utils.handleDBCallback(null, cb));
-};
-
-module.exports = new Checkin();
+module.exports = new User();

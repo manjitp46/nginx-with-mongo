@@ -2,14 +2,14 @@
 var ObjectID = require("mongodb").ObjectID;
 var broadcaster = require("broadcaster");
 var utils = require("../utils/utils");
-var checkinModel = require("../models/checkin");
+var userModel = require("../models/user");
 var dslog = require("../utils/dslog");
 var jwt = require("../models").jwt;
 var serverConfigs = require("../configs/serverConfigs");
 var _ = require("lodash");
 
 module.exports = {
-  getCheckin: function(req, res) {
+  getHistory: function(req, res) {
     var selector = {};
     if (!_.isEmpty(req.query)) {
       selector = req.query;
@@ -17,13 +17,13 @@ module.exports = {
     if (!_.isEmpty(req.params)) {
       selector = req.params;
     }
-    checkinModel.getCheckin(selector, function(err, result) {
+    userModel.getHistory(selector, function(err, result) {
       if (err) {
         utils.sendResponseForAPI(err, req, res, null);
       } else {
         if (result.length > 0) {
-          result = _.sortBy(result, function(checkin) {
-            return new Date(checkin.time);
+          result = _.sortBy(result, function(history) {
+            return new Date(history.time);
           }).reverse();
         }
         utils.sendResponseForAPI(null, req, res, {
@@ -33,24 +33,13 @@ module.exports = {
       }
     });
   },
-  postCheckin: function(req, res) {
-    checkinModel.postCheckin(req.body.data, function(err, result) {
+  postHistory: function(req, res) {
+    userModel.postHistory(req.body.data, function(err, result) {
       if (err) {
         utils.sendResponseForAPI(err, req, res, null);
       } else {
         utils.sendResponseForAPI(null, req, res, {
           documents: result
-        });
-      }
-    });
-  },
-  sauravManjit: function(req, res) {
-    checkinModel.sauravManjit(function(err, result) {
-      if (err) {
-        utils.sendResponseForAPI(err, req, res, null);
-      } else {
-        utils.sendResponseForAPI(null, req, res, {
-          data: result
         });
       }
     });
