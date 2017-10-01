@@ -34,7 +34,10 @@ Checkin.prototype.getCheckin = function(query, cb) {
     });
   }
 
-  var finalSelector = { $and: selector };
+  var finalSelector = {};
+  if (selector.length > 0) {
+    finalSelector = { $and: selector };
+  }
   console.log("mongo query: ", JSON.stringify(finalSelector) + "\n");
   db
     .collection(COLLECTION)
