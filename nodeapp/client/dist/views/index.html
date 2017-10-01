@@ -78,6 +78,10 @@
     })
       .then(function (json) {
         console.log(json);
+        if (json.count == 0) {
+          alert("No data availabe.");
+          return false;
+        }
         var documents = json.documents.filter(function (checkin) {
           if (checkin.location.coordinate &&
             checkin.location.coordinate.lat) {
