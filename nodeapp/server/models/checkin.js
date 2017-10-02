@@ -3,9 +3,11 @@ var ObjectID = require("mongodb").ObjectID;
 var moment = require("moment-timezone");
 var broadcaster = require("broadcaster");
 var md5 = require("md5");
+var _ = require("lodash");
 var db = require("./index");
 var utils = require("../utils/utils");
 var COLLECTION = "checkins";
+
 global.env = process.env.NODE_ENV || "dev";
 
 function Checkin(obj) {
@@ -19,10 +21,24 @@ Checkin.prototype.getCheckin = function(query, cb) {
     selector.push({ _id: new ObjectID(query.id) });
   }
   if (query.name) {
-    selector.push({ "assosiation.name": query.name });
+    var intermediateSelector = [];
+    var elValues = query.name.split(",");
+    _.each(elValues, function(el) {
+      intermediateSelector.push({ "assosiation.name": el });
+    });
+    selector.push({
+      $or: intermediateSelector
+    });
   }
   if (query.type) {
-    selector.push({ "location.type": query.type });
+    var intermediateSelector = [];
+    var elValues = query.type.split(",");
+    _.each(elValues, function(el) {
+      intermediateSelector.push({ "location.type": el });
+    });
+    selector.push({
+      $or: intermediateSelector
+    });
   }
   if (query.date) {
     var startOfDay = moment(query.date)

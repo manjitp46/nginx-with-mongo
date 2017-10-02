@@ -7,11 +7,11 @@
   <title>Google Map</title>
   <style>
     #map {
-      height: 95%;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 10px;
+      height: 100%;
+      width: 100%;
+      margin-top: 20px;
+      /* margin-left: auto;
+      margin-right: auto; */
     }
 
     html,
@@ -83,17 +83,24 @@
           return false;
         }
         var documents = json.documents.filter(function (checkin) {
-          if (checkin.location.coordinate &&
+          if (checkin.location && checkin.location.coordinate &&
             checkin.location.coordinate.lat) {
             return true;
           }
         }).map(function (checkin) {
+          var batteryLevel;
+          if (checkin.assosiation && checkin.assosiation.battery) {
+            batteryLevel = checkin.assosiation.battery;
+          }
+          if (checkin.deviceInfo && checkin.deviceInfo.battery) {
+            batteryLevel = checkin.deviceInfo.battery;
+          }
           return {
             type: checkin.location.type,
             coordinate: checkin.location.coordinate,
             time: checkin.time,
             name: checkin.assosiation.name,
-            batteryLevel: checkin.assosiation.battery
+            batteryLevel: batteryLevel
           }
         });
         console.log(documents);
