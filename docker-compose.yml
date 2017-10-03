@@ -11,7 +11,10 @@ services:
   nodeapp-service-build:
     build: ./nodeapp
     ports:
-     - "8000:9999"
+      - "9999:9999" 
+    depends_on:
+      - mongodb-service-build
+      - nginx-service-build
 
   nginx-service-build:
     image: nginx:alpine

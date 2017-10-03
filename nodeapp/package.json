@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "body-parser": "^1.16.0",
+    "ds":"1.4.2",    
     "broadcaster": "^1.0.10",
     "cache": "^1.1.2",
     "connect": "^3.5.0",

@@ -92,7 +92,7 @@ module.exports = {
 
         dev: {
 
-            host: "mongodb://localhost:27017/nuageDM",
+            host: "mongodb://10.146.0.2:27017/nuageDM",
 
             dbOptions: {
 
