@@ -5,13 +5,15 @@ services:
     build: ./mongodb
     ports:
      - "27017:27017"
+    volumes:
+      - "/home/manjitpandeybth/database:/data/db" 
     stdin_open: true
     # tty: true
 
   nodeapp-service-build:
     build: ./nodeapp
     ports:
-      - "9999:9999" 
+      - "9999:9999"
     depends_on:
       - mongodb-service-build
       - nginx-service-build
