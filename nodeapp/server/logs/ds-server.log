@@ -1,0 +1,376 @@
+[2017-10-07 01:41:21.932] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:41:32.489] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:41:39.901] [INFO] server - ::1 - GET / 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 3877 71 ms
+[2017-10-07 01:41:41.699] [ERROR] server - ::1 - GET /checkin 500 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 1509 8 ms
+[2017-10-07 01:41:41.817] [ERROR] server - ::1 - GET /favicon.ico 404 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 24 2 ms
+[2017-10-07 01:41:52.537] [ERROR] server - ::1 - GET /checkin 500 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 1509 4 ms
+[2017-10-07 01:41:53.514] [ERROR] server - error connecting to mongo db at mongodb://10.146.0.2:27017/nuageDM
+[2017-10-07 01:43:20.828] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:43:20.879] [INFO] server - ::ffff:127.0.0.1 - GET / 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 3877 12 ms
+[2017-10-07 01:43:21.111] [ERROR] server - ::1 - GET /checkin 500 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 1509 7 ms
+[2017-10-07 01:43:28.894] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:43:49.925] [ERROR] server - error connecting to mongo db at mongodb://10.146.0.2:27017/nuageDM
+[2017-10-07 01:44:23.742] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:44:44.783] [ERROR] server - error connecting to mongo db at mongodb://10.146.0.2:27017/nuageDM
+[2017-10-07 01:44:54.940] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:44:55.143] [INFO] server - connected to mongo db at mongodb://127.0.0.1:27017/nuageDM
+[2017-10-07 01:46:08.288] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:46:08.310] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:46:19.104] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:46:19.122] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:46:21.187] [INFO] server - ::1 - GET / 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 3877 10 ms
+[2017-10-07 01:46:21.513] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 01:46:21.518] [INFO] server - ::1 - GET /checkin 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 37732 87 ms
+[2017-10-07 01:46:31.801] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 01:46:31.803] [INFO] server - ::1 - GET /checkin 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 37732 12 ms
+[2017-10-07 01:48:05.269] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 01:48:05.272] [INFO] server - ::1 - GET /checkin 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 37732 12 ms
+[2017-10-07 01:48:07.375] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 01:48:07.377] [INFO] server - ::1 - GET /checkin 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 37732 7 ms
+[2017-10-07 01:48:46.380] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 01:48:46.383] [INFO] server - ::1 - GET /checkin 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 37630 7 ms
+[2017-10-07 01:52:17.316] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:52:17.335] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:52:23.994] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:52:24.014] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:52:31.372] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:52:31.391] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:52:58.942] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:52:58.969] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:53:47.637] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:53:47.657] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:53:54.171] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:53:54.191] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:54:26.943] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:54:26.962] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:54:40.939] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:54:40.961] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:55:35.039] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:55:35.057] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:56:08.361] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:56:08.378] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:56:31.688] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:56:31.708] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:56:49.735] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:56:49.754] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:56:54.650] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:56:54.669] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:57:27.109] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:57:27.127] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:57:49.186] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:57:49.206] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:58:49.192] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:58:49.211] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:59:10.410] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 01:59:10.437] [INFO] server - ::1 - GET /organisation 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 5697 ms
+[2017-10-07 01:59:20.844] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 01:59:20.864] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 01:59:26.662] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 01:59:26.670] [INFO] server - ::1 - GET /organisation 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 18 ms
+[2017-10-07 01:59:27.999] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 01:59:28.003] [INFO] server - ::1 - GET /organisation 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 8 ms
+[2017-10-07 02:02:30.723] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:02:30.741] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:03:03.884] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:03:03.904] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:03:27.061] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:03:27.087] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:03:45.661] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:03:45.682] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:03:51.583] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:03:51.600] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:04:00.666] [ERROR] server - ::1 - POST /organisation 500 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 1490 6 ms
+[2017-10-07 02:05:10.891] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:05:10.910] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:05:36.191] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:05:36.213] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:05:53.005] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:05:53.024] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:05:57.232] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:05:57.251] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:06:00.982] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:06:00.991] [INFO] server - ::1 - GET /organisation 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 10 ms
+[2017-10-07 02:06:35.215] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 02:06:35.218] [INFO] server - ::1 - POST /organisation 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 28 35 ms
+[2017-10-07 02:06:48.149] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:06:48.150] [INFO] server - ::1 - GET /organisation 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 198 5 ms
+[2017-10-07 02:07:13.383] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:07:13.385] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 198 36 ms
+[2017-10-07 02:07:14.644] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:07:14.645] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 198 3 ms
+[2017-10-07 02:07:30.099] [ERROR] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 404 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 52 1 ms
+[2017-10-07 02:08:19.946] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:08:19.966] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:08:29.657] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:08:29.678] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:08:47.965] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:08:47.984] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:09:15.355] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:09:15.375] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:09:35.964] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:09:35.983] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:09:54.892] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:09:54.911] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:10:27.323] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:10:27.342] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:10:41.924] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:10:41.943] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:10:56.411] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:10:56.429] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:11:05.267] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:11:05.285] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:16:15.584] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:16:15.602] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:16:21.416] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:16:21.423] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 198 10 ms
+[2017-10-07 02:17:49.014] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:17:49.018] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 198 6 ms
+[2017-10-07 02:17:56.082] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:17:56.100] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:17:58.809] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:17:58.816] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 198 15 ms
+[2017-10-07 02:18:51.870] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:18:51.888] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:18:57.450] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:18:57.458] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 198 10 ms
+[2017-10-07 02:21:45.972] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:21:45.988] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:22:09.958] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:22:09.977] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:22:15.247] [ERROR] server - Uncaught Exception
+[2017-10-07 02:23:09.180] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:23:09.206] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:23:13.437] [ERROR] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 500 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 1471 153 ms
+[2017-10-07 02:23:49.253] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:23:49.273] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:23:52.492] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:23:52.513] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:23:54.290] [ERROR] server - Uncaught Exception
+[2017-10-07 02:24:18.415] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:24:18.436] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:24:23.295] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:24:23.305] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 20 ms
+[2017-10-07 02:26:14.950] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:26:14.968] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:26:21.520] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:26:21.538] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:27:05.855] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:27:05.874] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:27:20.906] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:27:20.928] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:27:40.348] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:27:40.366] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:27:56.063] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:27:56.080] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:28:04.211] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:28:04.230] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:28:19.967] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:28:19.985] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:28:42.524] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:28:42.542] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:29:05.752] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:29:05.764] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 26 ms
+[2017-10-07 02:29:29.630] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:29:29.648] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:29:43.781] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:29:43.799] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:29:47.591] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:29:47.613] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:30:28.470] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:30:28.489] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:30:38.263] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:30:38.281] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:30:50.797] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:30:50.817] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:30:57.317] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:30:57.346] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:31:20.722] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:31:20.740] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:33:05.101] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 02:33:05.110] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 138 11 ms
+[2017-10-07 02:35:49.727] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:35:49.745] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:36:12.162] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:36:12.181] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:36:16.658] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:36:16.675] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:36:21.543] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:36:21.562] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:36:55.033] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:36:55.051] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:37:37.295] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:37:37.315] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:37:53.826] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:37:53.844] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:38:37.362] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:38:37.380] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:38:52.245] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:38:52.263] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:38:55.842] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:38:55.859] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:39:04.927] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 02:39:04.932] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 376 65 ms
+[2017-10-07 02:40:04.635] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:40:04.654] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:40:13.220] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:40:13.227] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 150 16 ms
+[2017-10-07 02:40:28.247] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 02:40:28.251] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 265 22 ms
+[2017-10-07 02:41:17.609] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:41:17.627] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:41:22.804] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:41:22.827] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:41:34.233] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:41:34.262] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:41:43.537] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:41:43.555] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:41:46.084] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:41:46.102] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:41:52.674] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 02:41:52.681] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 138 13 ms
+[2017-10-07 02:42:59.263] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:42:59.281] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:43:07.432] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:43:07.455] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:43:09.170] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 02:43:09.177] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 145 14 ms
+[2017-10-07 02:43:43.407] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:43:43.425] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:43:47.635] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 02:43:47.642] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 145 15 ms
+[2017-10-07 02:43:52.137] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:43:52.139] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 150 10 ms
+[2017-10-07 02:44:02.393] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:44:02.412] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:44:07.207] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:44:07.213] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 150 16 ms
+[2017-10-07 02:44:12.928] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 02:44:12.931] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 145 11 ms
+[2017-10-07 02:44:15.966] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:44:15.967] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 275 8 ms
+[2017-10-07 02:44:43.042] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:44:43.060] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:44:48.758] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 02:44:48.765] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 145 15 ms
+[2017-10-07 02:44:56.866] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:44:56.891] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:45:05.905] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:45:05.913] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 150 16 ms
+[2017-10-07 02:46:27.595] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 02:46:27.597] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 120 9 ms
+[2017-10-07 02:46:34.704] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:46:34.706] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 250 8 ms
+[2017-10-07 02:46:49.906] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:46:49.907] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 250 9 ms
+[2017-10-07 02:47:27.085] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:47:27.103] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:47:40.300] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:47:40.319] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:49:25.103] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:49:25.124] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:49:40.568] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:49:40.588] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:49:42.473] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:49:42.492] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:50:14.938] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:50:14.955] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:50:23.271] [ERROR] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 500 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 1433 6 ms
+[2017-10-07 02:50:33.364] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:50:33.368] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 250 18 ms
+[2017-10-07 02:51:17.627] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:51:17.644] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:52:08.683] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:52:08.704] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:52:26.104] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:52:26.123] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:52:42.702] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:52:42.721] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:53:38.075] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:53:38.093] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:54:09.408] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:54:09.426] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:54:15.963] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:54:15.981] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:54:24.834] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:54:24.853] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:54:42.211] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:54:42.229] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:54:45.910] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:54:45.928] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 02:55:08.890] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:55:08.903] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 24 ms
+[2017-10-07 02:55:40.207] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:55:40.210] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 250 12 ms
+[2017-10-07 02:55:54.493] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 02:55:54.494] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 9 ms
+[2017-10-07 02:59:26.369] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 02:59:26.387] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:01:36.949] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:01:36.977] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:01:37.987] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:01:38.006] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:01:55.881] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 03:01:55.889] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 12 ms
+[2017-10-07 03:02:39.171] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:02:39.189] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:03:19.105] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:03:19.131] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:03:19.870] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:03:19.888] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:04:21.224] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 03:04:21.231] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 116 12 ms
+[2017-10-07 03:06:03.206] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:06:03.224] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:06:43.085] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:06:43.105] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:06:48.549] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:06:48.567] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:08:31.837] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:08:31.855] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:09:31.882] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:09:31.900] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:10:22.349] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:10:22.367] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:10:34.886] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:10:34.907] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:11:22.406] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:11:22.423] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:11:35.907] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:11:35.925] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:11:41.100] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:11:41.118] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:11:44.490] [ERROR] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 500 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 1457 5 ms
+[2017-10-07 03:11:58.198] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:11:58.219] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:12:03.871] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 03:12:03.877] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 268 10 ms
+[2017-10-07 03:14:16.709] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:14:16.727] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:14:26.627] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:14:26.644] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:14:49.221] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:14:49.240] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:15:00.182] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:15:00.200] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:15:42.332] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 03:15:42.340] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 268 11 ms
+[2017-10-07 03:16:28.777] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 03:16:28.779] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 237 5 ms
+[2017-10-07 03:17:08.470] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:17:08.488] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:17:16.087] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:17:16.105] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:17:19.607] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 03:17:19.628] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 03:18:45.442] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 03:18:45.450] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 12 ms
+[2017-10-07 03:18:49.458] [INFO] server - { statusCode: 201, statusMessage: 'Success' }
+[2017-10-07 03:18:49.462] [INFO] server - ::1 - POST /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 201 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 28 9 ms
+[2017-10-07 03:18:53.308] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 03:18:53.311] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 6 ms
+[2017-10-07 03:18:55.950] [INFO] server - { statusCode: 200, statusMessage: 'Success' }
+[2017-10-07 03:18:55.952] [INFO] server - ::1 - GET /organisation/59d7e953fb27444a902169f5/d/88c9e260-aadb-11e7-abc4-cec278b6b50a 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 - 26 10 ms
+[2017-10-07 08:59:15.985] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 08:59:16.038] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM
+[2017-10-07 08:59:44.002] [INFO] server - Running in dev mode @ http://localhost:9999
+[2017-10-07 08:59:44.021] [INFO] server - connected to mongo db at mongodb://localhost:27017/nuageDM

@@ -89,7 +89,7 @@
             return true;
           }
         }).map(function (checkin) {
-          var batteryLevel;
+          var batteryLevel, address;
           if (checkin.assosiation && checkin.assosiation.battery) {
             batteryLevel = checkin.assosiation.battery;
           }
